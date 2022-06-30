@@ -6,19 +6,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t cowyo:c$GIT_COMMIT .'
+                sh 'docker build -t adrlanek/cowyo:c$GIT_COMMIT .'
             }
         }
         stage('Test') {
             steps {
-                sh 'docker run --rm cowyo:c$GIT_COMMIT go test ./...'
+                sh 'docker run --rm adrlanek/cowyo:c$GIT_COMMIT go test ./...'
             }
         }
         stage('Deploy') {
             steps {
-                sh '''docker build -t cowyo-runtime:c$GIT_COMMIT -f Dockerfile.multistage .
+                sh '''docker build -t adrlanek/cowyo-runtime:c$GIT_COMMIT -f Dockerfile.multistage .
                                 docker rm -f cowyo-app || exit 0
-                                docker run -d --name cowyo-app -p 8050:8050 cowyo-runtime:c$GIT_COMMIT
+                                docker run -d --name cowyo-app -p 8050:8050 adrlanek/cowyo-runtime:c$GIT_COMMIT
                                 sleep 10
                                 curl \'http://localhost:8050/\''''
             }
