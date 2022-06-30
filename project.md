@@ -120,3 +120,6 @@ Po utworzeniu projektu na Jenkinsie, możemy uruchomić build'a:
 Podczas uruchamiania pojawi się też checkbox pytający dewelopera czy chce opublikować pakiet w Docker Hubie:
 
 ![img.png](screenshots/should_publish.png)
+
+Możemy też zobaczyć szczegóły poszczególnych buildów:
+![img.png](screenshots/build.png)
