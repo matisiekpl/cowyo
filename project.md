@@ -122,4 +122,7 @@ Podczas uruchamiania pojawi się też checkbox pytający dewelopera czy chce opu
 ![img.png](screenshots/should_publish.png)
 
 Możemy też zobaczyć szczegóły poszczególnych buildów:
+
 ![img.png](screenshots/build.png)
+
+W ten sposób Jenkins w pełni zautomatyzował proces budowy i dystrybucji aplikacji.
