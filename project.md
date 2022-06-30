@@ -37,3 +37,22 @@ cd jenkins
 wget https://get.jenkins.io/war-stable/2.346.1/jenkins.war
 java -jar jenkins.war
 ```
+
+## Wstępna konfiguracja
+Po zainstalowaniu Jenkinsa, pojawi się konfigurator wstępny.
+![klucz](screenshots/klucz.png)
+Należy podać hasło aktywacyjne, można je odczytać wywołując polecenie: `cat /Users/user/.jenkins/secrets/initialAdminPassword`
+![klucz](screenshots/wtyczki.png)
+Można też zainstalować sugerowane wtyczki
+![klucz](screenshots/uzytkownik.png)
+Oraz utworzyć pierwszego użytkownika
+
+## Konfiguracja bezpieczeństwa
+
+## Utworzenie projektu
+Tworzymy projekt, klikając przycisk "Nowy projekt" w panelu głównym
+![img.png](screenshots/projekt.png)
+Następnie ustawiamy źródło definicji pipeline jako Jenkinsfile pobrany z systemu kontroli wersji i klikamy "Zapisz"
+![img.png](screenshots/scm.png)
+
+
