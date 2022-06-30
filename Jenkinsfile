@@ -28,7 +28,7 @@ pipeline {
                 expression { params.DEPLOY_TO_PRODUCTION }
             }
             steps {
-                sh 'docker push cowyo-runtime:c$GIT_COMMIT'
+                sh 'docker push adrlanek/cowyo-runtime:c$GIT_COMMIT'
             }
         }
     }
