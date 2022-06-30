@@ -114,6 +114,7 @@ Następnie ustawiamy źródło definicji pipeline jako Jenkinsfile pobrany z sys
 
 
 Po utworzeniu projektu na Jenkinsie, możemy uruchomić build'a:
+
 ![img.png](screenshots/run.png)
 
 Podczas uruchamiania pojawi się też checkbox pytający dewelopera czy chce opublikować pakiet w Docker Hubie:
