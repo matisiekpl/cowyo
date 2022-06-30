@@ -37,7 +37,7 @@ pipeline {
         }
         stage('Publish') {
             when {
-                expression { params.DEPLOY_TO_PRODUCTION }
+                expression { params.SHOULD_PUBLISH }
             }
             steps {
                 // Wypchnięcie obrazu do Docker Huba
